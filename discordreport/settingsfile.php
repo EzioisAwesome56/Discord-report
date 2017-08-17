@@ -17,7 +17,7 @@
 		),
 		"extra" => array(
 			"type" => "options",
-			"options" => array('on' => 'yes', 'off' => 'no'),
+			"options" => array('yes' => 'on', 'no' => 'off'),
 			"default" => 'off',
 			"name" => "Extra webhooks",
 		),

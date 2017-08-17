@@ -12,7 +12,7 @@ if($loguser["displayname"])
 $fpage = ircForumPrefix($forum);
 $link = getServerDomainNoSlash().actionLink("post", $pid);
 
-ircReport("\003".$c2."New reply by "
+ircReport("New reply by "
 	.ircUserColor($thename, $loguser['sex'], 0)
 	.": "
 	.$thread["title"]
