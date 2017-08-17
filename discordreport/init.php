@@ -9,6 +9,14 @@ function ircReport($stuff)
     curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
     $fartz = curl_exec($curl);
+	if (Settings::pluginGet("extra") == "yes")
+	{
+		$curl2 = curl_init(Settings::pluginGet("webhook2"));
+		curl_setopt($curl2, CURLOPT_CUSTOMREQUEST, "POST");
+		curl_setopt($curl2, CURLOPT_POSTFIELDS, json_encode($data));
+		curl_setopt($curl2, CURLOPT_RETURNTRANSFER, true);
+		$icecapzone = curl_exec($curl2);
+	}
 }
 // dummy functions, they do nothing at all, but there so I dont have to delete stuff
 function ircColor($c)
