@@ -16,7 +16,7 @@ ircReport("New reply by "
 	.ircUserColor($thename, $loguser['sex'], 0)
 	.": "
 	.$thread["title"]
-	."(".$fpage.$forum["title"].")"
+	." (".$fpage.$forum["title"].")"
 	." -- "
 	.$link
 	);
