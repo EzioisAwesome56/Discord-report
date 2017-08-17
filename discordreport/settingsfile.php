@@ -15,15 +15,16 @@
 			"default" => "https://maxcdn.icons8.com/Share/icon/Logos//discord_logo1600.png",
 			"name" => "Webhook profile picture",
 		),
-		/*"reportPassMatches" => array(
-			"type" => "boolean",
-			"default" => "0",
-			"name" => "Report number of password matches",
+		"extra" => array(
+			"type" => "options",
+			"options" => array('on' => 'yes', 'off' => 'no'),
+			"default" => 'off',
+			"name" => "Extra webhooks",
 		),
-		"reportIPMatches" => array(
-			"type" => "boolean",
-			"default" => "0",
-			"name" => "Report number of IP matches",
-		),*/
+		"webhook2" => array(
+			"type" => "text",
+			"default" => "",
+			"name" => "Secondary Discord webhook link",
+		),	
 	);
 ?>
